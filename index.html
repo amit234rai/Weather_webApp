@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="img/bg.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVJkEZSMUkrQ6usKu8zCQtl4D2SFkbtQoge9kblJ0UH6gLZetoKYyKIJXR30hasffkE/69f5jbQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container" id="parent">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-content">
+          <div class="logo-section">
+            <i class="fas fa-cloud-sun"></i>
+            <h1>Weather Forecast</h1>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Search Section -->
+        <div class="search-section">
+          <div class="search-box">
+            <input
+              type="text"
+              id="input-box"
+              class="search-input"
+              placeholder="Search for a city..."
+              aria-label="Search city"
+            />
+            <i class="fas fa-search search-icon"></i>
+          </div>
+        </div>
+
+        <!-- Weather Display -->
+        <div class="weather-display" id="weather-body">
+          <!-- Weather content dynamically inserted here -->
+          <div class="placeholder">
+            <i class="fas fa-magnifying-glass"></i>
+            <p>Enter a city name to get started</p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
